@@ -1,0 +1,117 @@
+---
+// Footer component for the dental practice
+import { Image } from "astro:assets";
+import logoSvg from "../assets/logo.svg";
+---
+
+<footer class="bg-gray-200 border-t border-gray-200">
+  <div class="px-6 py-16 mx-auto max-w-7xl">
+    <div class="grid grid-cols-1 gap-12 md:grid-cols-3">
+      <!-- Column 1: Office Hours -->
+      <div>
+        <h3 class="mb-6 text-lg font-semibold text-gray-900">Sprechzeiten</h3>
+        <div class="space-y-4 text-sm text-gray-600">
+          <div>
+            <div class="font-medium text-gray-900">Montag</div>
+            <div>08.00 – 13.00 Uhr</div>
+            <div>14.00 – 18.00 Uhr</div>
+          </div>
+          <div>
+            <div class="font-medium text-gray-900">Dienstag</div>
+            <div>08.00 – 13.00 Uhr</div>
+            <div>14.00 – 18.00 Uhr</div>
+          </div>
+          <div>
+            <div class="font-medium text-gray-900">Mittwoch</div>
+            <div>08.00 – 14.00 Uhr</div>
+          </div>
+          <div>
+            <div class="font-medium text-gray-900">Donnerstag</div>
+            <div>08.00 – 13.00 Uhr</div>
+            <div>14.00 – 18.00 Uhr</div>
+          </div>
+          <div>
+            <div class="font-medium text-gray-900">Freitag</div>
+            <div>08.00 – 13.00 Uhr</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2: Contact Information -->
+      <div>
+        <h3 class="mb-6 text-lg font-semibold text-gray-900">Kontakt</h3>
+        <div class="space-y-4 text-sm text-gray-600">
+          <div>
+            <div class="font-medium text-gray-900">Zahnarzt Dirk Conrad</div>
+            <div>Hildesheimerstr. 356</div>
+            <div>30880 Laatzen/OT Rethen</div>
+          </div>
+          <div>
+            <div>Telefon: <a href="tel:+4951029013144" class="text-blue-600 hover:text-blue-800">05102 - 91 31 44</a></div>
+            <div>Telefax: 05102 - 91 31 55</div>
+          </div>
+          <div>
+            <div>
+              <a href="mailto:kontakt@laserzahnarzt-laatzen.de" class="text-blue-600 hover:text-blue-800"> kontakt@laserzahnarzt-laatzen.de </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Terminanfrage Section -->
+        <div class="mt-8">
+          <h4 class="mb-4 text-base font-semibold text-gray-900">Terminanfrage</h4>
+          <div class="space-y-3 text-sm text-gray-600">
+            <p class="text-sm">Termine vereinbaren Sie bitte telefonisch unter:</p>
+
+            <div class="p-3 bg-white border border-gray-300 rounded-lg">
+              <div class="text-center">
+                <div class="mb-1 text-base font-semibold text-gray-900">
+                  <a href="tel:+4951029013144" class="text-blue-600 hover:text-blue-800"> 05102 - 91 31 44 </a>
+                </div>
+                <div class="text-xs text-gray-600">während unserer Sprechzeiten</div>
+              </div>
+            </div>
+
+            <p class="text-xs">Unser Praxisteam ist gerne für Sie da und findet gemeinsam mit Ihnen einen passenden Termin für Ihre Behandlung.</p>
+
+            <div class="p-2 mt-4 border border-blue-200 rounded-lg bg-blue-50">
+              <p class="text-xs text-blue-800">
+                <strong>Notfall außerhalb der Sprechzeiten:</strong><br />
+                Wenden Sie sich bitte an den zahnärztlichen Notdienst.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 3: Navigation & Legal -->
+      <div>
+        <h3 class="mb-6 text-lg font-semibold text-gray-900">Leistungen</h3>
+
+        <!-- Main Navigation -->
+        <div class="mb-8">
+          <div class="space-y-2">
+            <a href="/" class="block text-sm text-gray-600 hover:text-blue-600">Startseite</a>
+            <a href="/leistungen/aengste-abbauen" class="block text-sm text-gray-600 hover:text-blue-600">Ängste abbauen und Schmerzen vermeiden</a>
+            <a href="/leistungen/prophylaxe" class="block text-sm text-gray-600 hover:text-blue-600">Zähne schützen: Prophylaxe</a>
+            <a href="/leistungen/parodontologie" class="block text-sm text-gray-600 hover:text-blue-600">Zähne erhalten: Parodontologie</a>
+            <a href="/leistungen/endodontie" class="block text-sm text-gray-600 hover:text-blue-600">Zähne retten: Endodontie</a>
+            <a href="/leistungen/zahnersatz" class="block text-sm text-gray-600 hover:text-blue-600">Zähne ersetzen: Zahnersatz</a>
+            <a href="/leistungen/laserzahnheilkunde" class="block text-sm text-gray-600 hover:text-blue-600">Sanfte Laserzahnheilkunde</a>
+            <a href="/leistungen/kaltes-plasma" class="block text-sm text-gray-600 hover:text-blue-600">Kaltes Plasma (Ozon)</a>
+          </div>
+        </div>
+
+        <!-- Legal Links -->
+        <div>
+          <div class="space-y-2">
+            <a href="/kontakt" class="block text-sm text-gray-600 hover:text-blue-600">Kontakt</a>
+            <a href="/anfahrt" class="block text-sm text-gray-600 hover:text-blue-600">Anfahrt</a>
+            <a href="/impressum" class="block text-sm text-gray-600 hover:text-blue-600">Impressum</a>
+            <a href="/datenschutz" class="block text-sm text-gray-600 hover:text-blue-600">Datenschutzerklärung</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

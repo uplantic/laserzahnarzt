@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --color-brand: oklch(0.65 0.18 260);
+  --color-brand-red: oklch(0.577 0.2339 27.95);
+}
+
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
