@@ -1,0 +1,49 @@
+---
+import Base from "../layouts/Base.astro";
+import { Image } from "astro:assets";
+import googleMapsImage from "../assets/google-maps-laserzahnarzt-laatzen.png";
+---
+
+<Base title="Kontakt - Zahnarztpraxis Dirk Conrad">
+  <div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+    <div class="mx-auto max-w-2xl lg:max-w-4xl lg:grid lg:grid-cols-1 lg:gap-x-8">
+      <div>
+        <div class="">
+          <div class="lg:max-w-lg">
+            <p class="text-base/7 font-semibold text-blue-600">Zahnarztpraxis</p>
+            <h1 class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Kontakt</h1>
+          </div>
+        </div>
+        <div class="mt-8 max-w-4xl text-base/7 text-gray-700">
+          <p>
+            Unsere Praxis ist zentral und sehr verkehrsgünstig gelegen im Marktzentrum Rethen direkt über der Marktapotheke und neben ALDI. In der Umgebung der Zahnarztpraxis ist ein großer
+            kostenloser Parkplatz bequem zu Fuß erreichbar und dank der direkten Nähe zur Straßenbahnhaltestelle „Bahnhof Rethen" der Üstra-Bahn Linie 1 ist unsere Praxis sehr gut zu erreichen und
+            ideal auch für alle, die es eilig haben.
+          </p>
+
+          <p class="mt-6">
+            Desweiteren können wir Ihnen bei Bedarf auch gerne ein Taxi bestellen. Sollten Sie Fragen zur Zahnarztpraxis, zu Parkmöglichkeiten oder zur Anfahrt haben, nehmen Sie Kontakt mit uns auf,
+            wir helfen Ihnen gerne weiter.
+          </p>
+
+          <div class="mt-8 p-6 bg-blue-50 rounded-lg">
+            <p class="font-semibold text-gray-900">
+              Rufen Sie uns einfach an, wenn Sie einen Termin vereinbaren möchten oder Fragen haben.<br />
+              Bei Terminverhinderung informieren Sie uns bitte möglichst einen Werktag zuvor.
+            </p>
+          </div>
+
+          <!-- Google Maps -->
+          <div class="mt-16">
+            <h2 class="text-2xl font-bold tracking-tight text-gray-900">So finden Sie uns</h2>
+            <div class="mt-6">
+              <a href="https://maps.app.goo.gl/oaYpeRqe2f4DUHcw8" target="_blank" rel="noopener noreferrer">
+                <Image src={googleMapsImage} alt="Google Maps Lageplan Zahnarztpraxis Laatzen" class="w-full hover:translate-y-1 transition-all" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Base>
