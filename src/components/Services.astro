@@ -1,0 +1,91 @@
+---
+type Service = {
+  href: string;
+  title: string;
+  blurb: string;
+};
+
+const services: Service[] = [
+  {
+    href: "/leistungen/prophylaxe",
+    title: "Prophylaxe",
+    blurb: "Professionelle Zahnreinigung und Vorsorge für gesunde Zähne und Zahnfleisch",
+  },
+  {
+    href: "/leistungen/parodontologie",
+    title: "Parodontologie",
+    blurb: "Behandlung von Zahnfleischerkrankungen und Erhaltung des Zahnhalteapparats",
+  },
+  {
+    href: "/leistungen/endodontie",
+    title: "Endodontie",
+    blurb: "Wurzelkanalbehandlungen zur Rettung stark geschädigter Zähne",
+  },
+  {
+    href: "/leistungen/zahnersatz",
+    title: "Zahnersatz",
+    blurb: "Hochwertiger Zahnersatz und Prothetik für ein natürliches Lächeln",
+  },
+  {
+    href: "/leistungen/laserzahnheilkunde",
+    title: "Laserzahnheilkunde",
+    blurb: "Sanfte und präzise Behandlung mit modernster Lasertechnologie",
+  },
+  {
+    href: "/leistungen/kaltes-plasma",
+    title: "Kaltes Plasma",
+    blurb: "Innovative Ozontherapie für schonende Desinfektion und Heilung",
+  },
+];
+---
+
+<section class="bg-white">
+  <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <h2 class="text-2xl font-bold tracking-tight text-gray-900">Unsere Leistungen im Überblick</h2>
+    </div>
+    <ul
+      role="list"
+      class="mt-6
+        grid grid-flow-col auto-cols-[18rem] gap-4 overflow-x-auto
+        scroll-px-4 px-1 snap-x snap-mandatory
+        sm:gap-6
+        xl:grid-flow-row xl:auto-cols-auto xl:grid-cols-3 xl:gap-8 xl:overflow-visible xl:px-0"
+      aria-label="Leistungsübersicht"
+    >
+      {
+        services.map((s) => (
+          <li class="snap-start xl:snap-none" key={s.href}>
+            <a
+              href={s.href}
+              class="
+              group relative flex h-80 w-[18rem] xl:w-auto flex-col overflow-hidden rounded-lg
+              border border-gray-200 bg-gradient-to-br from-gray-50 to-gray-100
+              p-6 shadow-sm transition-all duration-300
+              hover:shadow-md motion-safe:hover:translate-y-1
+              focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2
+            "
+              aria-label={`${s.title} – mehr erfahren`}
+            >
+              <div class="flex flex-1 flex-col justify-center">
+                <h3 class="mb-3 text-xl font-bold text-gray-900">{s.title}</h3>
+                <p class="text-sm text-gray-700">{s.blurb}</p>
+              </div>
+
+              <span class="mt-4 inline-flex items-center justify-end text-right text-sm font-medium text-gray-600 transition-colors group-hover:text-gray-800">
+                Mehr erfahren
+                <svg class="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-5 5a1 1 0 1 1-1.414-1.414L13.586 11H4a1 1 0 1 1 0-2h9.586l-3.293-3.293a1 1 0 0 1 0-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
